@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Exo 2", sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 25px auto;
+}
+
+nav {
+  padding: 4px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+nav a {
+  padding: 2px 8px;
+  text-decoration: none;
+  color: black;
+  border-left: 1px solid darkgray;
+}
+
+nav a:first-child {
+  border-left: 0px
+}
+
+.weather {
+  position: relative;
+  margin-top: 15px;
+  padding: 20px;
+  border: 1px solid gray;
+}
+
+.weather h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+fieldset {
+  display: inline-block;
+  margin: 25px 0px;
+  padding: 15px;
+  vertical-align: top;
+  border: 0px;
+}
+
+img {
+  position: absolute;
+  right: 35px;
+  top: 80px;
+  height: 150px;
+}
