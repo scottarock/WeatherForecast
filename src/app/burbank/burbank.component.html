@@ -2,9 +2,9 @@
   <h1>Burbank, CA</h1>
   <fieldset>
     <p>Humidity: {{ weather?.main.humidity }}%</p>
-    <p>Temperature (Average): {{ weather?.main.temp }}</p>
-    <p>Temperature (High): {{ weather?.main.temp_max }}</p>
-    <p>Temperature (Low): {{ weather?.main.temp_min }}</p>
+    <p>Temperature (Average): {{ weather?.main.temp | number: '0.0-0' }}º</p>
+    <p>Temperature (High): {{ weather?.main.temp_max | number: '0.0-0' }}º</p>
+    <p>Temperature (Low): {{ weather?.main.temp_min | number: '0.0-0' }}º</p>
     <p>Status: <span *ngFor="let status of weather?.weather">
       {{ status.main }}
     </span></p>
